@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.contenedor{
+    margin-top: 2%;
+}
+
+input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+.lista_compras {
+    text-align: left;
+}
+
+.contenedor_compras {
+    margin-top: 2%;
+    margin-left: 31%;
+}

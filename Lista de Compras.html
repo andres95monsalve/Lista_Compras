@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Compras</title>
+    <link rel="stylesheet" href="/4/lista_compras.css">
+</head>
+<body>
+    <h1 style="text-align: center; margin-top: 4%;">Lista de Compras</h1>
+    <div class="contenedor">
+        <input type="text" id="note" placeholder="Articulo">
+        <button onclick="addNote()">Agregar Articulo</button>
+        <button onclick="saveList()">Guardar Lista</button>
+        <button onclick="clearList()">Limpiar Lista</button>
+    
+        <div class="contenedor_compras">
+            <div class="lista_compras">
+                <div id="notesContainer"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+    <script src="/4/lista_compras.js"></script>
+</body>
+</html>
