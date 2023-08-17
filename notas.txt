@@ -1,0 +1,28 @@
+/LISTA_COMPRAS
+    /src
+        /components
+            /buttons
+                buttons.css
+                buttons.js
+                buttons.html
+            /lista
+                lista.css
+                lista.js
+                lista.html
+            /vistaPrincipal - importar los demás componentes
+                vistaPrincipal.css
+                vistaPrincipal.js
+                vistaPrincipal.html
+        /services - llamadas al backend
+            index.js
+        /images
+    index.html - importa vistaPrincipal
+    README.md
+    package.json
+
+
+
+Github:
+    git add <archivo>                    - agrega archivos que se van a mandar.
+    git commit -m "mensaje en el commit" - manda los archivos a "stage" (los archivos están guardados pero no han sido enviados a Github).
+    git push                             - manda los cambios (archivos) en "stage" a GitHub.
