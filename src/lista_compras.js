@@ -1,3 +1,4 @@
+// Added this line because loadNotes was not loading
 window.onload = loadNotes;
 
 function addNote() {
