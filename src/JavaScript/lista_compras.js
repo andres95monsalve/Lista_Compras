@@ -39,7 +39,7 @@ function saveList() {
     const doc = new jsPDF('p', 'mm', 'a4');
 
     const image = new Image();
-    image.src = '/Imagenes/PDF.jpg';
+    image.src = 'src/Imagenes/PDF.jpg';
 
     image.onload = function() {
         const imgWidth = 120;
