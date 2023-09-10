@@ -10,7 +10,11 @@ function addNote() {
     const notesContainer = document.getElementById("notesContainer");
     const noteElement = document.createElement("p");
 
-    const currentNotes = JSON.parse(localStorage.getItem("notes")) || [];
+    let currentNotes = localStorage.getItem("notes");
+    if (!currentNotes) {
+        currentNotes = [];
+    }
+
     const noteNumber = currentNotes.length + 1;
 
     noteElement.textContent = `${noteNumber}. ${note}`;
@@ -25,10 +29,10 @@ function addNote() {
 function loadNotes() {
     const notesContainer = document.getElementById("notesContainer");
     notesContainer.innerHTML = "";
-    const notes = JSON.parse(localStorage.getItem("notes")) || [];
-    for (let i = 0; i < notes.length; i++) {
+    const currentNotes = JSON.parse(localStorage.getItem("notes")) || [];
+    for (let i = 0; i < currentNotes.length; i++) {
         const noteElement = document.createElement("p");
-        noteElement.textContent = `${i + 1}. ${notes[i]}`;
+        noteElement.textContent = `${i + 1}. ${currentNotes[i]}`;
         notesContainer.appendChild(noteElement);
     }
 }
